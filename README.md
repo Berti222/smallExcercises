@@ -1,0 +1,2 @@
+# smallExcercises
+Selft made exercises.
