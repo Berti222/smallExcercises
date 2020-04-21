@@ -59,8 +59,4 @@ class ExamResults{
         return Math.ceil(Math.random()*100);
     }
 
-    orderResultByName(){
-        this.results.sort(results.name);
-        return this.results;
-    }
 }
