@@ -23,12 +23,12 @@ class Data{
 
 }
 
-class ExamResults{
+class ExamResults extends Data{
 
     results = [];
 
-    constructor(data){
-        this.data = data;
+    constructor(){
+        super();        
         this.createResults();
     }
 
@@ -37,8 +37,8 @@ class ExamResults{
     }
 
     createResults(){
-        const names = this.data.getNames();
-        const exams = this.data.getExams();
+        const names = this.getNames();
+        const exams = this.getExams();
 
         for (let i = 0; i < exams.length; i++) {
             for(let j = 0; j < names.length; j++){
@@ -47,7 +47,7 @@ class ExamResults{
                 {
                     name : names[j],
                     exam : exams[i],
-                    rating : this.creatRating()
+                    rating : this.createRating()
                 }
 
                 this.results.push(result);
@@ -55,7 +55,7 @@ class ExamResults{
         }
     }
 
-    creatRating(){
+    createRating(){
         return Math.ceil(Math.random()*100);
     }
 

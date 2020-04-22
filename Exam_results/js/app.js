@@ -1,5 +1,4 @@
-const data = new Data();
-const examResults = new ExamResults(data);
+const examResults = new ExamResults();
 const ui = new UI(examResults);
 
 window.addEventListener('load', windowLoadHandler);
