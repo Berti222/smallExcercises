@@ -57,14 +57,12 @@ class UI {
         return color;
     }
 
-    appendRows(){
+    appendRows(elementToAppend){
         const results = this.examResults.getResults();
-
-        const examResultsDiv = document.querySelector('#examResults');
 
         for(let result of results){
             const oneRow = this.createOneRow(result);
-            examResultsDiv.appendChild(oneRow);
+            elementToAppend.appendChild(oneRow);
         }
     }
 

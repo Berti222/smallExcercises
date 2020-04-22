@@ -6,6 +6,8 @@ window.addEventListener('load', windowLoadHandler);
 function windowLoadHandler(){
     console.log(examResults.getResults());
 
-    ui.appendRows();
+    const examResultsDiv = document.querySelector('#examResults');
+
+    ui.appendRows(examResultsDiv);
 }
 
