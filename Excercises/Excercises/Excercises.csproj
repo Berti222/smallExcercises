@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExcercisesWithNumbers\ArgumentIsNegativeException.cs" />
+    <Compile Include="ExcercisesWithNumbers\ArgumentIsZeroException.cs" />
+    <Compile Include="ExcercisesWithNumbers\IEvenOrOdd.cs" />
     <Compile Include="StringExcercises\ICharCounter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -49,5 +52,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
