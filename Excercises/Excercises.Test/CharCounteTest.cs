@@ -2,6 +2,7 @@
 //using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using Excercises;
+using Excercises.StringExcercises;
 
 namespace Excercises.Test
 {
