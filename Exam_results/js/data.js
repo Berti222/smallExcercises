@@ -3,7 +3,8 @@ class Data{
     names = ["Béla", "Károly", "Róbert", "Mária", "Lajos", "Izabella", "Anett", "Zsófia", "Tünde", "Dénes"];
     exams = [];
 
-    constructor(){
+    constructor(numberOfExam = 60){
+        this.numberOfExamValidator(numberOfExam);
         this.createExams();
     }
     
@@ -16,8 +17,16 @@ class Data{
     }
 
     createExams(){
-        for(let i= 0; i <60; i++){
+        for(let i= 0; i < this.numberOfExam; i++){
             this.exams.push("exam " + (i+1));
+        }
+    }
+
+    numberOfExamValidator(numberOfExam){
+        if(typeof(numberOfExam) == 'number' && numberOfExam > 0){
+            this.numberOfExam = numberOfExam;
+        } else {
+            this.numberOfExam = 60;
         }
     }
 
@@ -27,8 +36,8 @@ class ExamResults extends Data{
 
     results = [];
 
-    constructor(){
-        super();        
+    constructor(numberOfExam){
+        super(numberOfExam);        
         this.createResults();
     }
 
