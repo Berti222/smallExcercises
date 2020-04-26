@@ -57,7 +57,7 @@ namespace Excercises.Test
         [TestCase(0, new int[] { 0 })]
         [TestCase(1, new int[] { 0, 1 })]
         [TestCase(5, new int[] { 0, 1, 1, 2, 3, 5 })]
-        [TestCase(5, new int[] { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55})]
+        [TestCase(10, new int[] { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55})]
         public void GetFibonacciNumbersUpTo_CallingWithPositiveNumbers_ReturnTheListOfNumbers(int num, int[] expectedResultArr)
         {
             IEnumerable<int> result = _fibonacci.GetFibonacciNumbersUpTo(num);
